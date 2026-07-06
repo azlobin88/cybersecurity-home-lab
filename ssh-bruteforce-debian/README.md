@@ -29,7 +29,7 @@
 
 A password-guessing (brute-force) attack was conducted against the SSH service on host `debian` from source IP `192.168.1.210`. The attacking host issued a rapid sequence of authentication attempts against the `debian` account using a curated password list. Wazuh detected the activity via the `sshd` and `pam_unix`/`unix_chkpwd` log sources and correctly escalated it from individual authentication-failure events into a single aggregated brute-force alert.
 
-![Wazuh Alerts](ssh-bruteforce-debian/wazuh-alerts-overview.PNG)
+![Wazuh Alerts](./wazuh-alerts-overview.PNG)
 
 Full alert JSON: [alert-5763.json](./alert-5763.json)
 
