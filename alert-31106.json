@@ -1,0 +1,83 @@
+{
+  "_index": "wazuh-alerts-4.x-2026.07.18",
+  "_id": "_xE-d58Bro5D_we__Wle",
+  "_score": 1,
+  "_source": {
+    "agent": {
+      "ip": "192.168.1.196",
+      "name": "debian",
+      "id": "001"
+    },
+    "manager": {
+      "name": "wazuh-server"
+    },
+    "data": {
+      "protocol": "GET",
+      "srcip": "192.168.1.133",
+      "id": "200",
+      "url": "/dvwa/vulnerabilities/sqli/?id=1%27+UNION+SELECT+column_name%2Cnull+FROM+information_schema.columns+--+-&Submit=Submit"
+    },
+    "rule": {
+      "firedtimes": 4,
+      "mail": false,
+      "level": 6,
+      "pci_dss": [
+        "6.5",
+        "11.4"
+      ],
+      "tsc": [
+        "CC6.6",
+        "CC7.1",
+        "CC8.1",
+        "CC6.1",
+        "CC6.8",
+        "CC7.2",
+        "CC7.3"
+      ],
+      "description": "A web attack returned code 200 (success).",
+      "groups": [
+        "web",
+        "accesslog",
+        "attack"
+      ],
+      "mitre": {
+        "technique": [
+          "Exploit Public-Facing Application"
+        ],
+        "id": [
+          "T1190"
+        ],
+        "tactic": [
+          "Initial Access"
+        ]
+      },
+      "id": "31106",
+      "nist_800_53": [
+        "SA.11",
+        "SI.4"
+      ],
+      "gdpr": [
+        "IV_35.7.d"
+      ]
+    },
+    "decoder": {
+      "name": "web-accesslog"
+    },
+    "full_log": "192.168.1.133 - - [19/Jul/2026:01:00:41 +0300] \"GET /dvwa/vulnerabilities/sqli/?id=1%27+UNION+SELECT+column_name%2Cnull+FROM+information_schema.columns+--+-&Submit=Submit HTTP/1.1\" 200 6239 \"http://192.168.1.196/dvwa/vulnerabilities/sqli/?id=1%27+UNION+SELECT+table_name%2Cnull+FROM+information_schema.tables+--+-&Submit=Submit\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/150.0.0.0 Safari/537.36\"",
+    "input": {
+      "type": "log"
+    },
+    "@timestamp": "2026-07-18T22:00:42.269Z",
+    "location": "/var/log/apache2/access.log",
+    "id": "1784412042.123213",
+    "timestamp": "2026-07-18T22:00:42.269+0000"
+  },
+  "fields": {
+    "timestamp": [
+      "2026-07-18T22:00:42.269Z"
+    ],
+    "@timestamp": [
+      "2026-07-18T22:00:42.269Z"
+    ]
+  }
+}
