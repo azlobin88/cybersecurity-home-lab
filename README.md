@@ -13,7 +13,7 @@
 | # | Инцидент | Техника (MITRE) | Инструмент | Отчёт |
 |---|----------|-----------------|------------|-------|
 | 1 | SSH Brute-Force | T1110.001 | Hydra | [→](./ssh-bruteforce-debian) |
-| 2 | Network Scan | T1046 | Nmap | [→](./...) |
+| 2 | Boss_of_the_SOC | - | Splunk | [→](./Boss_of_the_SOC) |
 | 3 | SQL Injection | T1190 | DVWA | [→](./sqli-dvwa-debian) |
 | 4 | Malicious C2 | T1071.001 | Wireshark | [→](./malware-traffic-analysis/easyas123) |
 
