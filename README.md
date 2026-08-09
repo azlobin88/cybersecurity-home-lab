@@ -15,7 +15,7 @@
 | 1 | SSH Brute-Force | T1110.001 | Hydra | [→](./ssh-bruteforce-debian) |
 | 2 | Network Scan | T1046 | Nmap | [→](./...) |
 | 3 | SQL Injection | T1190 | DVWA | [→](./sqli-dvwa-debian) |
-| 4 | DNS Tunneling | T1071.004 | — | [→](./...) |
+| 4 | Malicious C2 | T1071.001 | Wireshark | [→](./malware-traffic-analysis/easyas123) |
 
 ## Стек и навыки
 Wazuh · Suricata · Zeek · MITRE ATT&CK · Wireshark · Linux
