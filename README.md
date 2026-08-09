@@ -14,7 +14,7 @@
 |---|----------|-----------------|------------|-------|
 | 1 | SSH Brute-Force | T1110.001 | Hydra | [→](./ssh-bruteforce-debian) |
 | 2 | Network Scan | T1046 | Nmap | [→](./...) |
-| 3 | SQL Injection | T1190 | DVWA | [→](./...) |
+| 3 | SQL Injection | T1190 | DVWA | [→](./sqli-dvwa-debian) |
 | 4 | DNS Tunneling | T1071.004 | — | [→](./...) |
 
 ## Стек и навыки
