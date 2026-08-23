@@ -22,4 +22,3 @@
 
 После того, как злоумышленник засыпал хост IIS множеством разведывательных запросов, он раскрывает их источник. С какого IP-адреса был сгенерирован этот разведывательный трафик?
 ![Target IP](./PCAP_Questions_1.PNG)
-https://github.com/azlobin88/cybersecurity-home-lab/blob/main/Lockdown_Lab/PCAP_Questions_1.PNG
