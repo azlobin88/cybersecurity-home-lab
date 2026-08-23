@@ -81,7 +81,11 @@ Question 9
 Question 10
 
 Анализ угроз показывает, что вредоносная программа отправляет сигналы на свой управляющий хост. С каким полным доменным именем (FQDN) она связывается?
-![Target IP](./MSA_Questions_10.PNG)
+![Target IP](./MSA_Questions_10_1.PNG)
+![Target IP](./MSA_Questions_10_2.PNG)
+![Target IP](./MSA_Questions_10_3.PNG)
+![Target IP](./MSA_Questions_10_4.PNG)
+![Target IP](./MSA_Questions_10_5.PNG)
 
 Question 11
 
