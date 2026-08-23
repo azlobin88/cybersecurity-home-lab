@@ -9,16 +9,16 @@
 
 
 ## Отчёты по инцидентам
-|---|----------|-----------------|------------|-------|
-| 1 | Анализ PCAP|
+
+## Анализ PCAP
+| Entity | Value |
+|---|---|
+| Target IP | 10.0.2.4 |
+| Targeted account | `debian` |
+| Source host | Kali Linux (attacker) |
+| Source IP | 192.168.1.210 |
+| Attack tool | THC-Hydra v9.7 |
+| Attack vector | SSH (port 22) |
+
 После того, как злоумышленник засыпал хост IIS множеством разведывательных запросов, он раскрывает их источник. С какого IP-адреса был сгенерирован этот разведывательный трафик?
-Ответ: 10.0.2.4
-
-
-
-| 2 | Boss_of_the_SOC | - | Splunk | [→](./Boss_of_the_SOC) |
-| 3 | SQL Injection | T1190 | DVWA | [→](./sqli-dvwa-debian) |
-| 4 | Malicious C2 | T1071.001 | Wireshark | [→](./malware-traffic-analysis/easyas123) |
-
-## Стек и навыки
-Wazuh · Suricata · Zeek · MITRE ATT&CK · Wireshark · Linux
+![Target IP](./Анализ%20PCAP%2C%20Вопрос%201.PNG)
