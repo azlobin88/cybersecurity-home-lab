@@ -4,7 +4,6 @@
 Эмуляция атак с Kali → детектирование → расследование → отчёт.
 
 ## Архитектура
-![lab diagram](docs/architecture.png)
 - Wazuh 4.14.5 (SIEM) | Debian (victim, Wazuh agent) | Kali (attacker)
 - Suricata (IDS) + Zeek (NSM), парсинг conn/dns/http.log через ossec.conf
 
