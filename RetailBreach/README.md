@@ -24,7 +24,11 @@
 Общая картина
 ![Target IP](./Protocol_Hierarchy.PNG)
 
+Конечные точки 1
+![Target IP](./Endpoints_1.PNG)
 
+Конечные точки 2
+![Target IP](./Endpoints_2.PNG)
 
 Question 1
 
