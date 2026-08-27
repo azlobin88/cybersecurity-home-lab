@@ -22,7 +22,7 @@
 | Question 7 | ../../../../../etc/passwd |
 
 Общая картина
-![Target IP](./Protocol Hierarchy.PNG)
+![Target IP](./Protocol_Hierarchy.PNG)
 
 
 
