@@ -16,7 +16,7 @@
 | 3 | SQL Injection | T1190 | DVWA | [→](./sqli-dvwa-debian) |
 | 4 | Malicious C2 | T1071.001 | Wireshark | [→](./malware-traffic-analysis/easyas123) |
 | 5 | Lockdown Lab | - | Wireshark | [→](./Lockdown_Lab) |
-| 6 | RetailBreach | - | Wireshark | [→](./Lockdown_Lab) |
+| 6 | RetailBreach | - | Wireshark | [→](./RetailBreach) |
 
 ## Стек и навыки
 Wazuh · Suricata · Zeek · MITRE ATT&CK · Wireshark · Linux
